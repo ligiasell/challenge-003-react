@@ -1,0 +1,41 @@
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 20px 120px;
+  background-color: var(--kelley-green);
+
+  .logo {
+    grid-column: 1;
+    justify-self: start;
+    width: 190px;
+    height: 41px;
+    fill: white;
+  }
+
+  .signout {
+    grid-column: 3;
+    justify-self: end;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .button {
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
